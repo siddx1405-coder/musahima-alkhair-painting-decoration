@@ -1,16 +1,16 @@
 import { useState, type ReactNode } from "react";
-import aboutInterior from "./assets/images/about-interior.jpg";
-import ceilingDetails from "./assets/images/ceiling-details.jpg";
-import decorativeGypsum from "./assets/images/decorative-gypsum.jpg";
-import exteriorFinishes from "./assets/images/exterior-finishes.jpg";
-import exteriorPainting from "./assets/images/exterior-painting.jpg";
-import fineFinishes from "./assets/images/fine-finishes.jpg";
-import floorFinishing from "./assets/images/floor-finishing.jpg";
-import gypsumCeiling from "./assets/images/gypsum-ceiling.jpg";
-import heroInterior from "./assets/images/hero-interior.jpg";
-import interiorPainting from "./assets/images/interior-painting.jpg";
-import modernInteriors from "./assets/images/modern-interiors.jpg";
-import tilingWork from "./assets/images/tiling-work.jpg";
+import aboutInterior from "./assets/images/about-interior.svg";
+import ceilingDetails from "./assets/images/ceiling-details.svg";
+import decorativeGypsum from "./assets/images/decorative-gypsum.svg";
+import exteriorFinishes from "./assets/images/exterior-finishes.svg";
+import exteriorPainting from "./assets/images/exterior-painting.svg";
+import fineFinishes from "./assets/images/fine-finishes.svg";
+import floorFinishing from "./assets/images/floor-finishing.svg";
+import gypsumCeiling from "./assets/images/gypsum-ceiling.svg";
+import heroInterior from "./assets/images/hero-interior.svg";
+import interiorPainting from "./assets/images/interior-painting.svg";
+import modernInteriors from "./assets/images/modern-interiors.svg";
+import tilingWork from "./assets/images/tiling-work.svg";
 
 type Language = "en" | "ar";
 
