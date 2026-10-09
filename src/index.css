@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f4f1eb;
+  color: #162d4f;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-arabic {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  color: #b94437;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section-label::before {
+  width: 2.5rem;
+  height: 1px;
+  background: #b94437;
+  content: "";
+}
+
+.section-title {
+  max-width: 48rem;
+  color: #162d4f;
+  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+
+.font-arabic .section-title {
+  line-height: 1.35;
+  letter-spacing: -0.03em;
+}
+
+.section-title em {
+  color: #b94437;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: opacity 180ms ease;
+}
+
+.contact-row:hover {
+  opacity: 0.75;
+}
+
+.contact-row .contact-icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: none;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 999px;
+  color: #df7669;
+}
+
+.contact-row small,
+.contact-row strong {
+  display: block;
+}
+
+.contact-row small {
+  margin-bottom: 0.25rem;
+  color: rgb(255 255 255 / 0.45);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-row strong {
+  color: white;
+  font-size: 0.875rem;
+}
+
+::selection {
+  background: #b94437;
+  color: white;
+}
