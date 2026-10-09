@@ -1,64 +1,76 @@
 import { useState, type ReactNode } from "react";
+import aboutInterior from "./assets/images/about-interior.jpg";
+import ceilingDetails from "./assets/images/ceiling-details.jpg";
+import decorativeGypsum from "./assets/images/decorative-gypsum.jpg";
+import exteriorFinishes from "./assets/images/exterior-finishes.jpg";
+import exteriorPainting from "./assets/images/exterior-painting.jpg";
+import fineFinishes from "./assets/images/fine-finishes.jpg";
+import floorFinishing from "./assets/images/floor-finishing.jpg";
+import gypsumCeiling from "./assets/images/gypsum-ceiling.jpg";
+import heroInterior from "./assets/images/hero-interior.jpg";
+import interiorPainting from "./assets/images/interior-painting.jpg";
+import modernInteriors from "./assets/images/modern-interiors.jpg";
+import tilingWork from "./assets/images/tiling-work.jpg";
 
 type Language = "en" | "ar";
 
 const photos = [
   {
-    src: "/images/interior-painting.jpg",
+    src: interiorPainting,
     en: "Interior painting",
     ar: "دهانات داخلية",
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    src: "/images/gypsum-ceiling.jpg",
+    src: gypsumCeiling,
     en: "Gypsum ceiling",
     ar: "أسقف جبس",
     className: "",
   },
   {
-    src: "/images/exterior-painting.jpg",
+    src: exteriorPainting,
     en: "Exterior painting",
     ar: "دهانات خارجية",
     className: "",
   },
   {
-    src: "/images/fine-finishes.jpg",
+    src: fineFinishes,
     en: "Fine finishes",
     ar: "تشطيبات راقية",
     className: "",
   },
   {
-    src: "/images/decorative-gypsum.jpg",
+    src: decorativeGypsum,
     en: "Decorative gypsum",
     ar: "ديكورات جبسية",
     className: "",
   },
   {
-    src: "/images/exterior-finishes.jpg",
+    src: exteriorFinishes,
     en: "Exterior finishes",
     ar: "تشطيبات الواجهات",
     className: "md:col-span-2",
   },
   {
-    src: "/images/tiling-work.jpg",
+    src: tilingWork,
     en: "Tiling work",
     ar: "أعمال البلاط",
     className: "",
   },
   {
-    src: "/images/ceiling-details.jpg",
+    src: ceilingDetails,
     en: "Ceiling details",
     ar: "تفاصيل الأسقف",
     className: "",
   },
   {
-    src: "/images/modern-interiors.jpg",
+    src: modernInteriors,
     en: "Modern interiors",
     ar: "تصميمات داخلية",
     className: "",
   },
   {
-    src: "/images/floor-finishing.jpg",
+    src: floorFinishing,
     en: "Floor finishing",
     ar: "تشطيب الأرضيات",
     className: "md:col-span-2",
@@ -289,11 +301,11 @@ export default function App() {
           <div className="relative min-h-[480px] lg:min-h-[650px]">
             <div className="absolute -right-24 top-0 size-[520px] rounded-full border border-[#b94437]/15 lg:size-[700px]" />
             <div className="absolute right-0 top-4 h-[85%] w-[86%] overflow-hidden rounded-[2rem_2rem_9rem_2rem] shadow-2xl shadow-[#162d4f]/15 rtl:left-0 rtl:right-auto rtl:rounded-[2rem_2rem_2rem_9rem]">
-              <img src="/images/hero-interior.jpg" alt="Beautifully painted modern living room" className="h-full w-full object-cover" />
+              <img src={heroInterior} alt="Beautifully painted modern living room" className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#162d4f]/40 via-transparent to-transparent" />
             </div>
             <div className="absolute bottom-3 left-0 w-48 overflow-hidden rounded-2xl border-4 border-[#f4f1eb] bg-white shadow-xl md:w-56 rtl:left-auto rtl:right-0">
-              <img src="/images/gypsum-ceiling.jpg" alt="Decorative gypsum ceiling with lighting" className="h-32 w-full object-cover md:h-40" />
+              <img src={gypsumCeiling} alt="Decorative gypsum ceiling with lighting" className="h-32 w-full object-cover md:h-40" />
               <div className="flex items-center gap-2 px-4 py-3 text-xs font-bold text-[#162d4f]">
                 <span className="grid size-6 place-items-center rounded-full bg-[#b94437] text-white"><Icon name="check" className="size-3.5" /></span>
                 {isArabic ? "تشطيب بمعايير عالية" : "Finished to a high standard"}
@@ -355,7 +367,7 @@ export default function App() {
         <section id="about" className="overflow-hidden bg-[#f4f1eb] px-5 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2 lg:items-center">
             <div className="relative mx-auto w-full max-w-xl pb-12 pe-10">
-              <img src="/images/about-interior.jpg" alt="Professionally finished home interior" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl" />
+              <img src={aboutInterior} alt="Professionally finished home interior" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl" />
               <div className="absolute bottom-0 end-0 max-w-[240px] rounded-2xl bg-[#b94437] p-6 text-white shadow-xl">
                 <span className="font-serif text-4xl italic">Doha</span>
                 <p className="mt-2 text-xs font-semibold leading-5 text-white/75">{isArabic ? "خدمة محلية موثوقة في معيذر وجميع أنحاء الدوحة" : "Trusted local service in Muaither and across the city"}</p>
